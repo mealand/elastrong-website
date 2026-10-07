@@ -1,0 +1,65 @@
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <svg class="preloader__logo" viewBox="0 0 48 48">
+      <path class="pl-heart" d="M24 42C10.5 32.6 4 24.6 4 16.2 4 10 8.6 5 14.6 5c4 0 7.4 2.2 9.4 5.6C26 7.2 29.4 5 33.4 5 39.4 5 44 10 44 16.2 44 24.6 37.5 32.6 24 42z"/>
+      <circle class="pl-head" cx="24" cy="18.5" r="4.6"/>
+      <path class="pl-body" d="M14.5 32c2.4-5.6 5.6-8.4 9.5-8.4s7.1 2.8 9.5 8.4"/>
+    </svg>
+    <p class="preloader__word"><span>Elastrong</span> <span>Cares</span></p>
+    <p class="preloader__count"><span data-preload-count>0</span>%</p>
+  </div>
+</div>
+<div class="curtain" aria-hidden="true"><svg class="curtain__logo"><use href="#i-logo"/></svg></div>
+<div class="scroll-progress" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html" aria-label="{{site.name}} — home">
+      <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="brand__text"><strong>Elastrong</strong><small>Cares Foundation</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li><a class="nav__link" href="index.html" data-nav="home">Home</a></li>
+        <li><a class="nav__link" href="about.html" data-nav="about">About</a></li>
+        <li><a class="nav__link" href="programs.html" data-nav="programs">What We Do</a></li>
+        <li><a class="nav__link" href="outreaches.html" data-nav="outreaches">Outreaches</a></li>
+        <li><a class="nav__link" href="get-involved.html" data-nav="involved">Get Involved</a></li>
+        <li><a class="nav__link" href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--primary btn--sm btn--donate" href="donate.html" data-magnetic>
+        <svg class="icon icon--beat" aria-hidden="true"><use href="#i-heart"/></svg><span>Donate</span>
+      </a>
+      <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__inner container">
+    <nav aria-label="Mobile">
+      <ol class="mobile-nav__list">
+        <li style="--i:0"><a href="index.html" data-nav="home"><span>01</span>Home</a></li>
+        <li style="--i:1"><a href="about.html" data-nav="about"><span>02</span>About</a></li>
+        <li style="--i:2"><a href="programs.html" data-nav="programs"><span>03</span>What We Do</a></li>
+        <li style="--i:3"><a href="outreaches.html" data-nav="outreaches"><span>04</span>Outreaches</a></li>
+        <li style="--i:4"><a href="get-involved.html" data-nav="involved"><span>05</span>Get Involved</a></li>
+        <li style="--i:5"><a href="contact.html" data-nav="contact"><span>06</span>Contact</a></li>
+        <li style="--i:6"><a href="donate.html" data-nav="donate" class="is-donate"><span>♥</span>Donate</a></li>
+      </ol>
+    </nav>
+    <div class="mobile-nav__foot">
+      <a href="mailto:{{site.email}}">{{site.email}}</a>
+      <a href="tel:{{site.phoneHref}}">{{site.phone}}</a>
+      {{> social}}
+    </div>
+  </div>
+</div>

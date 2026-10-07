@@ -1,0 +1,66 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="index.html">
+          <svg class="brand__mark" aria-hidden="true"><use href="#i-logo"/></svg>
+          <span class="brand__text"><strong>Elastrong</strong><small>Cares Foundation</small></span>
+        </a>
+        <p>Restoring dignity, comfort and companionship to vulnerable elderly people across Abuja, Nigeria.</p>
+        {{> social}}
+      </div>
+
+      <div>
+        <h3 class="site-footer__title">Explore</h3>
+        <ul class="site-footer__links">
+          <li><a href="about.html">About us</a></li>
+          <li><a href="programs.html">What we do</a></li>
+          <li><a href="outreaches.html">Outreaches</a></li>
+          <li><a href="get-involved.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="site-footer__title">Reach us</h3>
+        <ul class="site-footer__contact">
+          <li><svg class="icon"><use href="#i-pin"/></svg><span>{{site.address}}</span></li>
+          <li><svg class="icon"><use href="#i-phone"/></svg><a href="tel:{{site.phoneHref}}">{{site.phone}}</a></li>
+          <li><svg class="icon"><use href="#i-mail"/></svg><a href="mailto:{{site.email}}">{{site.email}}</a></li>
+        </ul>
+      </div>
+
+      <div class="site-footer__news">
+        <h3 class="site-footer__title">Stay close</h3>
+        <p>Stories from the field, once a month. No spam, ever.</p>
+        <form class="newsletter" action="forms/submit.php" method="post" data-ajax novalidate>
+          <input type="hidden" name="form_type" value="newsletter">
+          <input type="hidden" name="_ts" value="">
+          <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+          <label class="sr-only" for="nl-email-{{page.slug}}">Email address</label>
+          <input id="nl-email-{{page.slug}}" type="email" name="email" placeholder="Your email address" required autocomplete="email">
+          <button class="newsletter__btn" type="submit" aria-label="Subscribe"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="site-footer__giant" aria-hidden="true">Elastrong<em>Cares</em></div>
+
+    <div class="site-footer__bottom">
+      <p>© <span data-year>{{year}}</span> {{site.name}}. Reg. No. {{site.regNumber}}</p>
+      <p><a href="privacy.html">Privacy policy</a> · Made with <svg class="icon icon--beat icon--inline"><use href="#i-heart"/></svg> in Abuja</p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg class="icon"><use href="#i-whatsapp"/></svg>
+</a>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg class="to-top__ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22"/><circle class="to-top__progress" cx="24" cy="24" r="22"/></svg>
+  <svg class="icon"><use href="#i-arrow-up"/></svg>
+</button>
+
+<div class="toast" role="status" aria-live="polite"></div>

@@ -1,0 +1,18 @@
+# Dependencies (reinstall with: npm install)
+node_modules/
+
+# Original media library: large files, kept in OneDrive only
+Media/
+
+# Form submissions saved on the server: private, never commit
+public_html/forms/storage/*
+!public_html/forms/storage/.htaccess
+
+# Deployment packages
+deploy/
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

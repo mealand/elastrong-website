@@ -1,0 +1,167 @@
+<!--meta {"title":"Get Involved","description":"Volunteer, partner with us, sponsor an elder or donate items. Join Elastrong Cares Foundation in caring for vulnerable elderly people in Abuja.","nav":"involved"} -->
+
+<section class="page-hero">
+  <figure class="media" data-label="Volunteers group photo (wide)"><img src="assets/images/involved/involved-hero.jpg" alt=""></figure>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="container page-hero__inner">
+    <nav class="crumbs" aria-label="Breadcrumb" data-reveal><a href="index.html">Home</a><span>/</span><span>Get involved</span></nav>
+    <h1 data-split>Lend a hand. <em>Change</em> a life.</h1>
+    <p class="page-hero__lead" data-reveal style="--d:300ms">Your time, skills and network are as precious as money. Here’s how to join us.</p>
+  </div>
+</section>
+
+<!-- Ways -->
+<section class="section">
+  <div class="container">
+    <div class="ways" data-stagger style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">
+      <a class="way" href="#volunteer" data-reveal>
+        <span class="way__icon"><svg class="icon"><use href="#i-hands"/></svg></span>
+        <figure class="media" data-label="Volunteers at work"><img src="assets/images/involved/volunteer.jpg" alt="" loading="lazy"></figure>
+        <div class="way__body"><h3>Volunteer</h3><p>Outreach days, medical help, logistics, media and more.</p><span class="link-arrow">Sign up <svg class="icon"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="way" href="#partner" data-reveal>
+        <span class="way__icon"><svg class="icon"><use href="#i-globe"/></svg></span>
+        <figure class="media" data-label="Partner organisation"><img src="assets/images/involved/partner.jpg" alt="" loading="lazy"></figure>
+        <div class="way__body"><h3>Partner</h3><p>Corporate, faith-based and community partnerships.</p><span class="link-arrow">Partner with us <svg class="icon"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="way" href="#sponsor" data-reveal>
+        <span class="way__icon"><svg class="icon"><use href="#i-heart-o"/></svg></span>
+        <figure class="media" data-label="An elder smiling"><img src="assets/images/involved/sponsor.jpg" alt="" loading="lazy"></figure>
+        <div class="way__body"><h3>Sponsor an elder</h3><p>Monthly giving that provides steady, personal care.</p><span class="link-arrow">Learn more <svg class="icon"><use href="#i-arrow"/></svg></span></div>
+      </a>
+      <a class="way" href="donate.html#in-kind" data-reveal>
+        <span class="way__icon"><svg class="icon"><use href="#i-gift"/></svg></span>
+        <figure class="media" data-label="Donated items"><img src="assets/images/clothing/clothing-01.jpg" alt="Donated items packed in gift bags" loading="lazy"></figure>
+        <div class="way__body"><h3>Donate items</h3><p>Food, clothing, toiletries, mattresses and medication.</p><span class="link-arrow">What we need <svg class="icon"><use href="#i-arrow"/></svg></span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Volunteer form -->
+<section class="section section--sand" id="volunteer">
+  <div class="container split" style="align-items:start">
+    <div>
+      <p class="eyebrow" data-reveal>Volunteer</p>
+      <h2 data-split>Give a day. <em>Gain</em> a family.</h2>
+      <p class="lead" data-reveal style="margin:1.4rem 0 2rem">Tell us about yourself and we’ll reach out before our next outreach.</p>
+      <figure class="media" data-reveal="clip" style="aspect-ratio:4/3" data-label="Volunteer helping an elder"><img src="assets/images/involved/volunteer-form.jpg" alt="" loading="lazy"></figure>
+    </div>
+
+    <div class="form-card" data-reveal>
+      <form action="forms/submit.php" method="post" data-ajax novalidate>
+        <input type="hidden" name="form_type" value="volunteer">
+        <input type="hidden" name="_ts" value="">
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form-grid">
+          <div class="field"><input id="v-name" name="name" type="text" placeholder=" " required autocomplete="name"><label for="v-name">Full name *</label></div>
+          <div class="field"><input id="v-phone" name="phone" type="tel" placeholder=" " required autocomplete="tel"><label for="v-phone">Phone / WhatsApp *</label></div>
+          <div class="field full"><input id="v-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="v-email">Email address *</label></div>
+          <div class="field"><input id="v-location" name="location" type="text" placeholder=" "><label for="v-location">Area of residence</label></div>
+          <div class="field">
+            <select id="v-avail" name="availability">
+              <option value="Weekends">Weekends</option>
+              <option value="Weekdays">Weekdays</option>
+              <option value="Once a month">Once a month</option>
+              <option value="Flexible">Flexible</option>
+            </select>
+            <label for="v-avail">Availability</label>
+          </div>
+          <fieldset class="fieldset full">
+            <legend>How would you like to help?</legend>
+            <div class="check-chips">
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Outreach days"><span>Outreach days</span></label>
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Medical / health"><span>Medical / health</span></label>
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Logistics & driving"><span>Logistics &amp; driving</span></label>
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Photo & video"><span>Photo &amp; video</span></label>
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Fundraising"><span>Fundraising</span></label>
+              <label class="check-chip"><input type="checkbox" name="skills[]" value="Visiting elders"><span>Visiting elders</span></label>
+            </div>
+          </fieldset>
+          <div class="field full"><textarea id="v-msg" name="message" placeholder=" "></textarea><label for="v-msg">Anything else we should know?</label></div>
+        </div>
+        <div class="form-foot">
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <button class="btn btn--green btn--lg" type="submit">Join the team <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
+      <div class="form-success">
+        <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="40"/><path d="M28 45l11 11 21-23"/></svg>
+        <h3>Welcome to the family!</h3>
+        <p class="lead" style="margin-inline:auto">We’ve received your details and will be in touch soon.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sponsor an elder -->
+<section class="section section--dark" id="sponsor">
+  <div class="container split">
+    <div class="collage">
+      <figure class="media" data-reveal="clip" data-label="Elder portrait (sponsor programme)"><img src="assets/images/involved/sponsor-1.jpg" alt="" loading="lazy"></figure>
+      <figure class="media" data-reveal="clip" style="--d:250ms;border-color:var(--c-green-900)" data-label="Care package"><img src="assets/images/involved/sponsor-2.jpg" alt="" loading="lazy"></figure>
+    </div>
+    <div>
+      <p class="eyebrow" data-reveal>Sponsor an elder</p>
+      <h2 data-split>Be someone’s <em>constant</em>.</h2>
+      <p class="lead" data-reveal style="margin:1.4rem 0 1.6rem">A monthly gift covers food, health and essentials for one elder, and you’ll receive updates on the life you’re touching.</p>
+      <ul class="checks" data-stagger>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Monthly food &amp; essentials</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Regular health checks</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Updates and photos every quarter</li>
+      </ul>
+      <a class="btn btn--primary btn--lg" href="donate.html?amount=25000" data-magnetic data-reveal style="margin-top:2rem">Sponsor an elder <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- Partner form -->
+<section class="section" id="partner">
+  <div class="container split" style="align-items:start">
+    <div>
+      <p class="eyebrow" data-reveal>Partner with us</p>
+      <h2 data-split>Bigger <em>together</em>.</h2>
+      <p class="lead" data-reveal style="margin:1.4rem 0 2rem">Sponsor an outreach, run an employee giving drive, provide medical services or donate goods.</p>
+      <div class="chips" data-stagger>
+        <span class="chip" data-reveal>Corporate CSR</span>
+        <span class="chip" data-reveal>Churches &amp; mosques</span>
+        <span class="chip" data-reveal>Hospitals &amp; clinics</span>
+        <span class="chip" data-reveal>Schools &amp; youth groups</span>
+        <span class="chip" data-reveal>Media</span>
+      </div>
+    </div>
+    <div class="form-card" data-reveal>
+      <form action="forms/submit.php" method="post" data-ajax novalidate>
+        <input type="hidden" name="form_type" value="partner">
+        <input type="hidden" name="_ts" value="">
+        <div class="hp" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+        <div class="form-grid">
+          <div class="field full"><input id="p-org" name="organization" type="text" placeholder=" " required autocomplete="organization"><label for="p-org">Organisation *</label></div>
+          <div class="field"><input id="p-name" name="name" type="text" placeholder=" " required autocomplete="name"><label for="p-name">Contact person *</label></div>
+          <div class="field"><input id="p-phone" name="phone" type="tel" placeholder=" " autocomplete="tel"><label for="p-phone">Phone</label></div>
+          <div class="field full"><input id="p-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="p-email">Email address *</label></div>
+          <div class="field full">
+            <select id="p-type" name="partnership_type">
+              <option>Sponsor an outreach</option>
+              <option>Donate goods or services</option>
+              <option>Medical partnership</option>
+              <option>Employee giving / volunteering</option>
+              <option>Other</option>
+            </select>
+            <label for="p-type">Type of partnership</label>
+          </div>
+          <div class="field full"><textarea id="p-msg" name="message" placeholder=" "></textarea><label for="p-msg">Tell us about your idea</label></div>
+        </div>
+        <div class="form-foot">
+          <p class="form-status" role="status" aria-live="polite"></p>
+          <button class="btn btn--green btn--lg" type="submit">Send enquiry <svg class="icon"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
+      <div class="form-success">
+        <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="40"/><path d="M28 45l11 11 21-23"/></svg>
+        <h3>Thank you!</h3>
+        <p class="lead" style="margin-inline:auto">Our team will contact you within a few working days.</p>
+      </div>
+    </div>
+  </div>
+</section>

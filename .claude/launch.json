@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "elastrong",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["build.mjs", "--serve"],
+      "port": 8080
+    }
+  ]
+}

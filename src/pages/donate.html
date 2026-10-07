@@ -1,0 +1,160 @@
+<!--meta {"title":"Donate","description":"Donate to Elastrong Cares Foundation. Your gift provides food, healthcare, clothing and companionship to vulnerable elderly people in Abuja, Nigeria.","nav":"donate","hideCta":true} -->
+
+<section class="page-hero">
+  <figure class="media" data-label="Donate hero: emotional elder portrait"><img src="assets/images/donate/donate-hero.jpg" alt=""></figure>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="container page-hero__inner" style="padding-bottom:8rem">
+    <nav class="crumbs" aria-label="Breadcrumb" data-reveal><a href="index.html">Home</a><span>/</span><span>Donate</span></nav>
+    <h1 data-split>Give the gift of <em>being remembered</em>.</h1>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="container donate-layout">
+
+    <!-- Donation widget -->
+    <div class="donate-widget" data-donate data-reveal>
+      <h2>Make a donation</h2>
+      <p>100% of public donations go to elder care. Choose an amount below.</p>
+
+      <div class="segmented" data-freq="once" role="group" aria-label="Donation frequency">
+        <span class="segmented__pill" aria-hidden="true"></span>
+        <button type="button" class="is-active" data-freq="once" aria-pressed="true">Give once</button>
+        <button type="button" data-freq="monthly" aria-pressed="false">Monthly ♥</button>
+      </div>
+
+      <div class="amounts" role="group" aria-label="Choose an amount">
+        <button type="button" class="amount-btn" data-amount="5000">₦5,000</button>
+        <button type="button" class="amount-btn" data-amount="10000">₦10,000</button>
+        <button type="button" class="amount-btn" data-amount="25000">₦25,000</button>
+        <button type="button" class="amount-btn" data-amount="50000">₦50,000</button>
+        <button type="button" class="amount-btn" data-amount="100000">₦100,000</button>
+        <button type="button" class="amount-btn" data-amount="250000">₦250,000</button>
+      </div>
+      <div class="amount-custom">
+        <span aria-hidden="true">₦</span>
+        <label class="sr-only" for="donate-custom">Custom amount in naira</label>
+        <input id="donate-custom" type="text" inputmode="numeric" placeholder="Other amount">
+      </div>
+
+      <div class="impact-line"><svg class="icon"><use href="#i-heart"/></svg><p>Pays for a health check-up and basic medication.</p></div>
+
+      <form novalidate>
+        <div class="form-grid">
+          <div class="field"><input id="d-name" name="name" type="text" placeholder=" " required autocomplete="name"><label for="d-name">Full name *</label></div>
+          <div class="field"><input id="d-email" name="email" type="email" placeholder=" " required autocomplete="email"><label for="d-email">Email (for your receipt) *</label></div>
+        </div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" data-magnetic>
+          <svg class="icon icon--beat"><use href="#i-heart"/></svg> Donate <span data-donate-total>₦10,000</span>
+        </button>
+        <p class="form-status" role="status" aria-live="polite" style="margin-top:.8rem;text-align:center"></p>
+        <p class="secure-note"><svg class="icon"><use href="#i-shield"/></svg>Secure payment by Paystack · Card, bank transfer &amp; USSD</p>
+      </form>
+
+      <div class="donate-thanks">
+        <svg class="check-anim" viewBox="0 0 88 88" aria-hidden="true"><circle cx="44" cy="44" r="40"/><path d="M28 45l11 11 21-23"/></svg>
+        <h2>Thank you!</h2>
+        <p class="lead" style="margin:0 auto 1rem">Your kindness will reach an elder who needs it. A receipt is on its way to your inbox.</p>
+        <p data-donate-ref style="font-size:.85rem;color:var(--c-muted)"></p>
+      </div>
+    </div>
+
+    <!-- Bank & other ways -->
+    <aside class="donate-side">
+      <div class="bank-card" id="bank-transfer" data-reveal data-tilt>
+        <div class="bank-card__top"><span>Bank transfer · NGN</span><svg class="icon"><use href="#i-bank"/></svg></div>
+        <div class="bank-row bank-row--big">
+          <div><small>Account number</small><strong>{{site.donate.bank.accountNumber}}</strong></div>
+          <button class="copy-btn" type="button" data-copy="{{site.donate.bank.accountNumber}}"><svg class="icon"><use href="#i-copy"/></svg><span>Copy</span></button>
+        </div>
+        <div class="bank-row"><div><small>Account name</small><strong>{{site.donate.bank.accountName}}</strong></div></div>
+        <div class="bank-row"><div><small>Bank</small><strong>{{site.donate.bank.bankName}}</strong></div></div>
+      </div>
+
+      <div class="info-card" data-reveal>
+        <h3><svg class="icon"><use href="#i-globe"/></svg>Giving from abroad</h3>
+        <p>Use our domiciliary account, or <a href="contact.html"><u>contact us</u></a> for other options.</p>
+        <div class="bank-mini">
+          <span><strong>Bank:</strong> {{site.donate.usdBank.bankName}}</span>
+          <span><strong>Account:</strong> {{site.donate.usdBank.accountNumber}}</span>
+          <span><strong>SWIFT:</strong> {{site.donate.usdBank.swift}}</span>
+        </div>
+      </div>
+
+      <div class="info-card" data-reveal>
+        <h3><svg class="icon"><use href="#i-whatsapp"/></svg>Need help giving?</h3>
+        <p>Chat with us on <a href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener"><u>WhatsApp</u></a> or call <a href="tel:{{site.phoneHref}}"><u>{{site.phone}}</u></a>.</p>
+      </div>
+    </aside>
+  </div>
+
+  <div class="container trust" data-reveal>
+    <span><svg class="icon"><use href="#i-shield"/></svg>Registered non-profit · {{site.regNumber}}</span>
+    <span><svg class="icon"><use href="#i-check"/></svg>Receipts for every gift</span>
+    <span><svg class="icon"><use href="#i-heart-o"/></svg>Transparent reporting</span>
+  </div>
+</section>
+
+<!-- Where your money goes -->
+<section class="section section--dark">
+  <div class="container alloc">
+    <div class="donut" data-donut="#alloc-legend" data-reveal="zoom">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="80" stroke="rgba(251,246,238,.08)"/></svg>
+      <div class="donut__center"><strong>100%</strong><span>to elder care</span></div>
+    </div>
+    <div>
+      <p class="eyebrow" data-reveal>Where your gift goes</p>
+      <h2 data-split>Every naira, <em>accounted</em> for.</h2>
+      <p class="lead" data-reveal style="margin:1.2rem 0 2rem">Hover each item to see how donations are put to work.</p>
+      <ul class="legend" id="alloc-legend" data-stagger>
+        <li data-value="45" data-color="#f4a83a" data-reveal><i></i><span>Food &amp; nutrition</span><strong>45%</strong></li>
+        <li data-value="25" data-color="#e8643c" data-reveal><i></i><span>Healthcare &amp; medication</span><strong>25%</strong></li>
+        <li data-value="15" data-color="#3fa37b" data-reveal><i></i><span>Clothing &amp; essentials</span><strong>15%</strong></li>
+        <li data-value="10" data-color="#9fd3b8" data-reveal><i></i><span>Outreach logistics</span><strong>10%</strong></li>
+        <li data-value="5" data-color="#fde7c2" data-reveal><i></i><span>Follow-up visits</span><strong>5%</strong></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- In-kind -->
+<section class="section section--sand" id="in-kind">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow" data-reveal>Donate items</p>
+        <h2 data-split>Gifts you can <em>hold</em>.</h2>
+        <p data-reveal>We gratefully accept new or gently used items. Call or WhatsApp us to arrange a drop-off or pick-up.</p>
+      </div>
+      <a class="btn btn--green" href="https://wa.me/{{site.whatsapp}}" target="_blank" rel="noopener" data-reveal><svg class="icon"><use href="#i-whatsapp"/></svg> Arrange a drop-off</a>
+    </div>
+    <div class="inkind" data-stagger>
+      <div class="inkind__item" data-reveal><span>🍚</span>Rice, beans &amp; grains</div>
+      <div class="inkind__item" data-reveal><span>🫒</span>Cooking oil &amp; seasoning</div>
+      <div class="inkind__item" data-reveal><span>🥛</span>Milk, tea &amp; beverages</div>
+      <div class="inkind__item" data-reveal><span>💊</span>Unexpired medication</div>
+      <div class="inkind__item" data-reveal><span>👕</span>Clothes &amp; wrappers</div>
+      <div class="inkind__item" data-reveal><span>🧼</span>Toiletries &amp; soap</div>
+      <div class="inkind__item" data-reveal><span>🛏️</span>Mattresses &amp; blankets</div>
+      <div class="inkind__item" data-reveal><span>🦯</span>Walking aids &amp; glasses</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section">
+  <div class="container">
+    <div class="section-head section-head--center">
+      <div>
+        <p class="eyebrow" data-reveal>Questions</p>
+        <h2 data-split>Giving, <em>explained</em>.</h2>
+      </div>
+    </div>
+    <div class="faq" data-stagger>
+      <div class="acc" data-reveal><button class="acc__btn" type="button" aria-expanded="false">Is my online donation secure?<span class="acc__icon"><svg class="icon"><use href="#i-plus"/></svg></span></button><div class="acc__panel"><div><p>Yes. Card payments are processed by Paystack, a PCI-DSS certified payment provider. We never see or store your card details.</p></div></div></div>
+      <div class="acc" data-reveal><button class="acc__btn" type="button" aria-expanded="false">Will I get a receipt?<span class="acc__icon"><svg class="icon"><use href="#i-plus"/></svg></span></button><div class="acc__panel"><div><p>Online donations receive an automatic email receipt. For bank transfers, send your name and transfer details to {{site.email}} and we’ll send one.</p></div></div></div>
+      <div class="acc" data-reveal><button class="acc__btn" type="button" aria-expanded="false">Can I give in memory of a loved one?<span class="acc__icon"><svg class="icon"><use href="#i-plus"/></svg></span></button><div class="acc__panel"><div><p>Absolutely. Email us after giving and we will dedicate your gift and share how it was used.</p></div></div></div>
+      <div class="acc" data-reveal><button class="acc__btn" type="button" aria-expanded="false">How do I cancel a monthly gift?<span class="acc__icon"><svg class="icon"><use href="#i-plus"/></svg></span></button><div class="acc__panel"><div><p>Use the link in your Paystack receipt email, or contact us and we’ll cancel it for you right away.</p></div></div></div>
+    </div>
+  </div>
+</section>

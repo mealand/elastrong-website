@@ -1,0 +1,45 @@
+<meta charset="utf-8">
+{{page.baseTag}}
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{page.fullTitle}}</title>
+<meta name="description" content="{{page.description}}">
+<link rel="canonical" href="{{page.url}}">
+<meta name="theme-color" content="#0b2e23">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{site.name}}">
+<meta property="og:title" content="{{page.fullTitle}}">
+<meta property="og:description" content="{{page.description}}">
+<meta property="og:url" content="{{page.url}}">
+<meta property="og:image" content="{{site.domain}}/{{page.ogImage}}">
+<meta property="og:locale" content="en_NG">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/images/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/css/main.css?v={{build}}">
+
+<script>document.documentElement.classList.add('js');</script>
+<script src="assets/js/config.js?v={{build}}" defer></script>
+<script src="assets/js/main.js?v={{build}}" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "NGO",
+  "name": "{{site.name}}",
+  "url": "{{site.domain}}",
+  "logo": "{{site.domain}}/favicon.svg",
+  "email": "{{site.email}}",
+  "telephone": "{{site.phoneHref}}",
+  "foundingDate": "{{site.founded}}",
+  "address": { "@type": "PostalAddress", "addressLocality": "Abuja", "addressRegion": "FCT", "addressCountry": "NG" },
+  "sameAs": ["{{site.social.facebook}}", "{{site.social.instagram}}", "{{site.social.x}}", "{{site.social.youtube}}"]
+}
+</script>

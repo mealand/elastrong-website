@@ -58,6 +58,7 @@ for (const file of pages) {
     bodyClass: meta.bodyClass || `page-${slug}`,
     ogImage: meta.ogImage || 'assets/images/og-image.jpg',
     baseTag: meta.base ? '<base href="/">' : '',
+    robots: site.indexable && !meta.noindex ? 'index, follow' : 'noindex, nofollow',
     ...meta,
   };
   const ctx = { site, page, year: new Date().getFullYear(), build };
@@ -110,6 +111,15 @@ ${sitemap.map(s => `  <url><loc>${s.url}</loc><lastmod>${today}</lastmod><priori
 </urlset>
 `
 );
+
+// robots.txt: blocks search engines until site.config.json "indexable" is true
+fs.writeFileSync(
+  path.join(OUT, 'robots.txt'),
+  site.indexable
+    ? `User-agent: *\nAllow: /\nDisallow: /forms/\n\nSitemap: ${site.domain}/sitemap.xml\n`
+    : 'User-agent: *\nDisallow: /\n'
+);
+if (!site.indexable) console.log('  ⚠ indexable=false: search engines are blocked (set "indexable": true at launch)');
 
 // Media checklist: every image/video slot referenced by the pages, and whether the file exists yet
 const slots = new Map();

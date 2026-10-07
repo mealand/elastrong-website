@@ -1,5 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /forms/
-
-Sitemap: https://elastrongcaresfoundation.org/sitemap.xml
+Disallow: /

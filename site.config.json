@@ -5,27 +5,22 @@
   "domain": "https://elastrongcaresfoundation.org",
   "tagline": "No elder should grow old alone.",
   "email": "info@elastrongcaresfoundation.org",
-  "phone": "+234 800 000 0000",
-  "phoneHref": "+2348000000000",
-  "whatsapp": "2348000000000",
+  "phone": "+234 703 591 4772",
+  "phoneHref": "+2347035914772",
+  "whatsapp": "2347035914772",
   "address": "Abuja, Federal Capital Territory, Nigeria",
   "officeHours": "Mon – Fri, 9am – 5pm",
   "regNumber": "CAC/IT/NO 000000",
   "founded": "2020",
   "mapEmbed": "https://www.google.com/maps?q=Abuja,+Nigeria&z=11&output=embed",
   "social": {
-    "facebook": "https://facebook.com/",
-    "instagram": "https://instagram.com/",
-    "x": "https://x.com/",
-    "youtube": "https://youtube.com/",
-    "tiktok": "https://tiktok.com/",
-    "linkedin": "https://linkedin.com/"
+    "facebook": "https://www.facebook.com/profile.php?id=61555839835890"
   },
   "stats": {
-    "elders": 1200,
-    "outreaches": 45,
-    "communities": 30,
-    "volunteers": 150
+    "elders": 150,
+    "outreaches": 10,
+    "communities": 15,
+    "volunteers": 21
   },
   "donate": {
     "currency": "NGN",

@@ -2,7 +2,7 @@
 window.ECF_CONFIG = {
   "name": "Elastrong Cares Foundation",
   "email": "info@elastrongcaresfoundation.org",
-  "whatsapp": "2348000000000",
+  "whatsapp": "2347035914772",
   "donate": {
     "currency": "NGN",
     "minimum": 1000,

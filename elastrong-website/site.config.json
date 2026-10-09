@@ -1,0 +1,47 @@
+{
+  "name": "Elastrong Cares Foundation",
+  "shortName": "Elastrong Cares",
+  "domain": "https://elastrongcaresfoundation.org",
+  "tagline": "No elder should grow old alone.",
+  "email": "info@elastrongcaresfoundation.org",
+  "phone": "+234 800 000 0000",
+  "phoneHref": "+2348000000000",
+  "whatsapp": "2348000000000",
+  "address": "Abuja, Federal Capital Territory, Nigeria",
+  "officeHours": "Mon – Fri, 9am – 5pm",
+  "regNumber": "CAC/IT/NO 000000",
+  "founded": "2020",
+  "mapEmbed": "https://www.google.com/maps?q=Abuja,+Nigeria&z=11&output=embed",
+  "social": {
+    "facebook": "https://facebook.com/",
+    "instagram": "https://instagram.com/",
+    "x": "https://x.com/",
+    "youtube": "https://youtube.com/",
+    "tiktok": "https://tiktok.com/",
+    "linkedin": "https://linkedin.com/"
+  },
+  "stats": {
+    "elders": 1200,
+    "outreaches": 45,
+    "communities": 30,
+    "volunteers": 150
+  },
+  "donate": {
+    "currency": "NGN",
+    "minimum": 1000,
+    "paystackPublicKey": "",
+    "paystackPaymentLink": "",
+    "paystackMonthlyLink": "",
+    "bank": {
+      "bankName": "Bank Name",
+      "accountName": "Elastrong Cares Foundation",
+      "accountNumber": "0000000000"
+    },
+    "usdBank": {
+      "bankName": "Bank Name (USD Domiciliary)",
+      "accountName": "Elastrong Cares Foundation",
+      "accountNumber": "0000000000",
+      "swift": "XXXXNGLA"
+    }
+  }
+}

@@ -13,7 +13,7 @@
  *   - resizes to a sensible max width (default 2000px)
  *   - gentle tone curve: normalise levels, a little extra warmth, saturation and clarity
  *   - sharpens lightly after resizing
- *   - saves as progressive MozJPEG (~150–400 KB) plus a WebP copy
+ *   - saves as progressive MozJPEG (~50–200 KB)
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -49,7 +49,6 @@ for (const file of files) {
 
   // write via fs (works inside sandboxed / virtualised folders where libvips can't)
   fs.writeFileSync(path.join(outDir, `${name}.jpg`), await base.clone().jpeg({ quality: 82, progressive: true, mozjpeg: true }).toBuffer());
-  fs.writeFileSync(path.join(outDir, `${name}.webp`), await base.clone().webp({ quality: 78 }).toBuffer());
   console.log(`  ✓ ${file} → ${name}.jpg`);
 }
 console.log(`\nEnhanced ${n} image(s) into ${outDir}. Run "node build.mjs" to refresh MEDIA-CHECKLIST.md.`);

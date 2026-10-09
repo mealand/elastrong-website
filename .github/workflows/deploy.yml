@@ -1,0 +1,66 @@
+# Automatically publish the website to Namecheap whenever changes are pushed to GitHub.
+#
+# One-time setup (GitHub → repository → Settings → Secrets and variables → Actions → New repository secret):
+#   FTP_SERVER     e.g. ftp.elastrongcaresfoundation.org
+#   FTP_USERNAME   the FTP account from cPanel → FTP Accounts (e.g. deploy@elastrongcaresfoundation.org)
+#   FTP_PASSWORD   that account's password
+# Optional repository *variable* (same page → Variables tab):
+#   FTP_SERVER_DIR folder on the server to upload into. Default "./" (an FTP account whose home IS public_html).
+#                  Use "public_html/" if your FTP account opens in your home folder instead.
+
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "public_html/**"
+      - "src/**"
+      - "site.config.json"
+      - "build.mjs"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch: # adds a "Run workflow" button for manual deploys
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      FTP_SERVER: ${{ secrets.FTP_SERVER }}
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build pages from src/ and site.config.json
+        run: node build.mjs
+
+      - name: Skip (FTP secrets not set yet)
+        if: env.FTP_SERVER == ''
+        run: echo "::warning::FTP secrets are not configured yet. Add FTP_SERVER, FTP_USERNAME and FTP_PASSWORD to enable deploys."
+
+      - name: Upload changed files to Namecheap (FTPS)
+        if: env.FTP_SERVER != ''
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
+          port: 21
+          local-dir: ./public_html/
+          server-dir: ${{ vars.FTP_SERVER_DIR || './' }}
+          # never touch form submissions saved on the server
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.gitkeep
+            forms/storage/*.csv
+            forms/storage/rate-*

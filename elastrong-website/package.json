@@ -1,0 +1,15 @@
+{
+  "name": "elastrong-cares-foundation-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Elastrong Cares Foundation — elastrongcaresfoundation.org",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node build.mjs --serve",
+    "media": "node tools/enhance-media.mjs"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.0"
+  }
+}

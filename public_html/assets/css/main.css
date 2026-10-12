@@ -1018,3 +1018,55 @@ form.is-sent + .form-success, .form-success.is-shown { display: block; animation
 .featured__thumbs .media { aspect-ratio: 1; border-radius: var(--radius-sm); }
 .featured__actions { display: flex; align-items: center; gap: 1.6rem; flex-wrap: wrap; }
 @media (max-width: 900px) { .featured__banner { max-height: 560px; } }
+
+/* ==========================================================================
+   Care vs medical classification (Oct 2026 update)
+   ========================================================================== */
+.stat__sub { display: block; margin-top: .5rem; font-size: .78rem; letter-spacing: .04em; color: var(--c-amber); opacity: .9; }
+
+.types { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.type-card { display: grid; grid-template-rows: auto 1fr; border-radius: var(--radius-lg); overflow: hidden; background: var(--c-white); box-shadow: var(--shadow-sm); transition: transform .6s var(--ease-out), box-shadow .6s; }
+.type-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.type-card .media { aspect-ratio: 16 / 9; border-radius: 0; }
+.type-card__body { padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; gap: .8rem; align-content: start; }
+.type-card__tag { justify-self: start; padding: .35rem .85rem; border-radius: 99px; background: var(--c-amber-100); color: var(--c-coral); font-size: .74rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.type-card--medical .type-card__tag { background: var(--c-green-100); color: var(--c-green-700); }
+.type-card__body > p { color: var(--c-muted); }
+.type-card__stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: .6rem; margin: .4rem 0; }
+.type-card__stats div { padding: .9rem .6rem; border-radius: var(--radius-sm); background: var(--c-cream); text-align: center; }
+.type-card__stats dt { font-family: var(--f-display); font-size: 1.8rem; line-height: 1; color: var(--c-coral); }
+.type-card--medical .type-card__stats dt { color: var(--c-green-600); }
+.type-card__stats dd { margin: .35rem 0 0; font-size: .76rem; font-weight: 600; color: var(--c-muted); line-height: 1.3; }
+.type-card .link-arrow { margin-top: .2rem; color: var(--c-green-700); }
+.types__total { text-align: center; margin-top: 2rem; color: var(--c-muted); font-weight: 600; }
+.types__total strong { font-family: var(--f-display); font-weight: 400; font-size: 1.4rem; color: var(--c-ink); }
+
+.featured--reverse > :first-child { order: 2; }
+.featured__banner--photo { aspect-ratio: 771 / 1080; }
+.featured__banner--photo img { object-fit: cover; background: none; }
+.featured__place { display: flex; align-items: center; gap: .5rem; margin-top: 1rem; font-weight: 700; color: var(--c-green-700); }
+.featured__place .icon { color: var(--c-coral); }
+.featured__services { margin-top: 1.2rem; grid-template-columns: 1fr 1fr; }
+.section--sand .featured__stats div { background: var(--c-cream); }
+
+.vol-types { display: grid; gap: 1rem; }
+.vol-type { display: grid; grid-template-columns: 140px 1fr; gap: 1.1rem; align-items: center; padding: .8rem; border-radius: var(--radius); background: var(--c-white); box-shadow: var(--shadow-sm); }
+.vol-type .media { aspect-ratio: 1; border-radius: var(--radius-sm); }
+.vol-type strong { font-family: var(--f-display); font-weight: 400; font-size: 1.35rem; color: var(--c-green-700); }
+.vol-type p { color: var(--c-muted); font-size: .92rem; margin-top: .3rem; }
+
+.member__link { margin-top: .4rem; font-size: .9rem; color: var(--c-green-700); }
+.copy-btn--light { background: var(--c-sand); padding: .3rem .7rem; margin-left: .4rem; vertical-align: middle; }
+.bank-mini__note { margin-top: .4rem; font-size: .85rem; color: var(--c-muted); }
+.site-footer__credit { flex-basis: 100%; text-align: center; padding-top: 1rem; border-top: 1px solid var(--c-line-light); font-size: .8rem; letter-spacing: .06em; opacity: .85; }
+.site-footer__credit strong { color: var(--c-amber); font-weight: 700; }
+
+@media (max-width: 900px) {
+  .types { grid-template-columns: 1fr; }
+  .featured--reverse > :first-child { order: 0; }
+}
+@media (max-width: 640px) {
+  .featured__services { grid-template-columns: 1fr; }
+  .type-card__stats dt { font-size: 1.5rem; }
+  .vol-type { grid-template-columns: 96px 1fr; }
+}

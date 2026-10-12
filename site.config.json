@@ -18,9 +18,14 @@
   },
   "stats": {
     "elders": 150,
+    "treated": 770,
     "outreaches": 10,
-    "communities": 15,
-    "volunteers": 21
+    "careOutreaches": 6,
+    "medicalOutreaches": 4,
+    "volunteers": 21,
+    "careVolunteers": 8,
+    "medicalVolunteers": 13,
+    "communities": 15
   },
   "donate": {
     "currency": "NGN",
@@ -29,15 +34,14 @@
     "paystackPaymentLink": "",
     "paystackMonthlyLink": "",
     "bank": {
-      "bankName": "Bank Name",
+      "bankName": "ECOBANK",
       "accountName": "Elastrong Cares Foundation",
-      "accountNumber": "0000000000"
+      "accountNumber": "5740048924"
     },
     "usdBank": {
-      "bankName": "Bank Name (USD Domiciliary)",
+      "bankName": "ECOBANK",
       "accountName": "Elastrong Cares Foundation",
-      "accountNumber": "0000000000",
-      "swift": "XXXXNGLA"
+      "accountNumber": "5740049206"
     }
   }
 }

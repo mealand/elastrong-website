@@ -24,11 +24,11 @@
       </div>
 
       <div class="amounts" role="group" aria-label="Choose an amount">
-        <button type="button" class="amount-btn" data-amount="5000">₦5,000</button>
         <button type="button" class="amount-btn" data-amount="10000">₦10,000</button>
-        <button type="button" class="amount-btn" data-amount="25000">₦25,000</button>
-        <button type="button" class="amount-btn" data-amount="50000">₦50,000</button>
-        <button type="button" class="amount-btn" data-amount="100000">₦100,000</button>
+        <button type="button" class="amount-btn" data-amount="20000">₦20,000</button>
+        <button type="button" class="amount-btn" data-amount="45000">₦45,000</button>
+        <button type="button" class="amount-btn" data-amount="75000">₦75,000</button>
+        <button type="button" class="amount-btn" data-amount="150000">₦150,000</button>
         <button type="button" class="amount-btn" data-amount="250000">₦250,000</button>
       </div>
       <div class="amount-custom">
@@ -37,7 +37,7 @@
         <input id="donate-custom" type="text" inputmode="numeric" placeholder="Other amount">
       </div>
 
-      <div class="impact-line"><svg class="icon"><use href="#i-heart"/></svg><p>Pays for a health check-up and basic medication.</p></div>
+      <div class="impact-line"><svg class="icon"><use href="#i-heart"/></svg><p>Puts a food pack in an elder’s hands.</p></div>
 
       <form novalidate>
         <div class="form-grid">
@@ -73,11 +73,12 @@
 
       <div class="info-card" data-reveal>
         <h3><svg class="icon"><use href="#i-globe"/></svg>Giving from abroad</h3>
-        <p>Use our domiciliary account, or <a href="contact.html"><u>contact us</u></a> for other options.</p>
+        <p>Send US dollars to our domiciliary account.</p>
         <div class="bank-mini">
           <span><strong>Bank:</strong> {{site.donate.usdBank.bankName}}</span>
-          <span><strong>Account:</strong> {{site.donate.usdBank.accountNumber}}</span>
-          <span><strong>SWIFT:</strong> {{site.donate.usdBank.swift}}</span>
+          <span><strong>Account name:</strong> {{site.donate.usdBank.accountName}}</span>
+          <span><strong>USD account:</strong> {{site.donate.usdBank.accountNumber}} <button class="copy-btn copy-btn--light" type="button" data-copy="{{site.donate.usdBank.accountNumber}}"><svg class="icon"><use href="#i-copy"/></svg><span>Copy</span></button></span>
+          <span class="bank-mini__note">Need SWIFT or routing details? <a href="contact.html"><u>Contact us</u></a>.</span>
         </div>
       </div>
 

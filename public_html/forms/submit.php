@@ -81,6 +81,7 @@ $forms = [
             'name'         => ['Name', true, 120],
             'email'        => ['Email', true, 160],
             'phone'        => ['Phone / WhatsApp', true, 40],
+            'volunteer_type' => ['Volunteer type', false, 60],
             'location'     => ['Area of residence', false, 120],
             'availability' => ['Availability', false, 60],
             'skills'       => ['Interests', false, 500],

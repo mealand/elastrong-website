@@ -10,15 +10,14 @@ window.ECF_CONFIG = {
     "paystackPaymentLink": "",
     "paystackMonthlyLink": "",
     "bank": {
-      "bankName": "Bank Name",
+      "bankName": "ECOBANK",
       "accountName": "Elastrong Cares Foundation",
-      "accountNumber": "0000000000"
+      "accountNumber": "5740048924"
     },
     "usdBank": {
-      "bankName": "Bank Name (USD Domiciliary)",
+      "bankName": "ECOBANK",
       "accountName": "Elastrong Cares Foundation",
-      "accountNumber": "0000000000",
-      "swift": "XXXXNGLA"
+      "accountNumber": "5740049206"
     }
   }
 };

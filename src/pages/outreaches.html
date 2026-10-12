@@ -18,18 +18,20 @@
   </div>
 </section>
 
-<!-- Featured outreach -->
-<section class="section">
+{{> outreach-types}}
+
+<!-- Featured care outreach -->
+<section class="section" id="care">
   <div class="container split featured">
     <figure class="media featured__banner" data-reveal="clip"><img src="assets/images/outreach/project-clean-banner.jpg" alt="Elastrong Cares Foundation banner: Project clean and put smiles in the face of our senior citizens in Nigeria, Africa and the world" loading="lazy"></figure>
     <div>
-      <p class="eyebrow" data-reveal>Featured outreach</p>
+      <p class="eyebrow" data-reveal>Care outreach</p>
       <h2 data-split>Project <em>Clean</em></h2>
       <p class="lead" data-reveal style="margin-top:1.2rem">Cleaning homes and compounds, sharing food and essentials, checking on health, and putting smiles on the faces of our senior citizens.</p>
       <div class="featured__stats" data-stagger>
-        <div data-reveal><strong>{{site.stats.elders}}+</strong><span>Elders cared for</span></div>
-        <div data-reveal><strong>{{site.stats.communities}}+</strong><span>Communities</span></div>
-        <div data-reveal><strong>{{site.stats.volunteers}}+</strong><span>Volunteers</span></div>
+        <div data-reveal><strong>{{site.stats.elders}}+</strong><span>Senior citizens cared for</span></div>
+        <div data-reveal><strong>{{site.stats.careOutreaches}}+</strong><span>Care outreaches</span></div>
+        <div data-reveal><strong>{{site.stats.careVolunteers}}+</strong><span>Care volunteers</span></div>
       </div>
       <div class="featured__thumbs" data-stagger>
         <a href="assets/images/hygiene/hygiene-01.jpg" data-lightbox="featured" data-caption="Project Clean: cleaning day" data-cursor="View" data-reveal="zoom"><figure class="media"><img src="assets/images/hygiene/hygiene-01.jpg" alt="Volunteers cleaning an elderly woman's home" loading="lazy"></figure></a>
@@ -38,6 +40,40 @@
       </div>
       <div class="featured__actions" data-reveal>
         <button class="btn btn--green" type="button" data-video="assets/videos/project-clean.mp4" data-caption="Project Clean: cleaning day"><svg class="icon"><use href="#i-play"/></svg> Watch Project Clean</button>
+        <a class="link-arrow" href="#gallery" style="margin-top:0">Browse the gallery <svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Featured medical outreach -->
+<section class="section section--sand" id="medical">
+  <div class="container split featured featured--reverse">
+    <figure class="media featured__banner featured__banner--photo" data-reveal="clip"><img src="assets/images/medical/medical-banner.jpg" alt="A volunteer in front of the Elastrong Cares Foundation Medical Outreach banner" loading="lazy"></figure>
+    <div>
+      <p class="eyebrow" data-reveal>Medical outreach</p>
+      <h2 data-split>Kafanchan <em>medical outreach</em></h2>
+      <p class="featured__place" data-reveal><svg class="icon"><use href="#i-pin"/></svg>Kafanchan Emirate Ward A &amp; B, Jema’a LGA, Kaduna State</p>
+      <p class="lead" data-reveal style="margin-top:1rem">Free healthcare for everyone in the community, delivered by our volunteer health practitioners.</p>
+      <ul class="checks featured__services" data-stagger>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Free malaria testing &amp; treatment</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Free dental check-ups</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Free medical consultations</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Blood pressure check-ups</li>
+        <li data-reveal><svg class="icon"><use href="#i-check"/></svg>Blood sugar level check-ups</li>
+      </ul>
+      <div class="featured__stats" data-stagger>
+        <div data-reveal><strong>{{site.stats.treated}}+</strong><span>People reached &amp; treated</span></div>
+        <div data-reveal><strong>{{site.stats.medicalOutreaches}}+</strong><span>Medical outreaches</span></div>
+        <div data-reveal><strong>{{site.stats.medicalVolunteers}}+</strong><span>Medical volunteers</span></div>
+      </div>
+      <div class="featured__thumbs" data-stagger>
+        <a href="assets/images/medical/medical-02.jpg" data-lightbox="medical" data-caption="The community turned out in numbers" data-cursor="View" data-reveal="zoom"><figure class="media"><img src="assets/images/medical/medical-02.jpg" alt="Community members waiting at the medical outreach" loading="lazy"></figure></a>
+        <a href="assets/images/medical/volunteers-02.jpg" data-lightbox="medical" data-caption="Medical volunteers at work" data-cursor="View" data-reveal="zoom"><figure class="media"><img src="assets/images/medical/volunteers-02.jpg" alt="Medical volunteers dispensing medication" loading="lazy"></figure></a>
+        <a href="assets/images/medical/medical-06.jpg" data-lightbox="medical" data-caption="Blood sugar screening" data-cursor="View" data-reveal="zoom"><figure class="media"><img src="assets/images/medical/medical-06.jpg" alt="A volunteer testing a patient's blood sugar" loading="lazy"></figure></a>
+      </div>
+      <div class="featured__actions" data-reveal>
+        <button class="btn btn--green" type="button" data-video="assets/videos/medical-testimonial.mp4" data-caption="A beneficiary of the Kafanchan medical outreach"><svg class="icon"><use href="#i-play"/></svg> Hear from a beneficiary</button>
         <a class="link-arrow" href="#gallery" style="margin-top:0">Browse the gallery <svg class="icon"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
@@ -58,7 +94,7 @@
       <button class="filters__btn is-active" type="button" data-filter="all" aria-pressed="true">All</button>
       <button class="filters__btn" type="button" data-filter="food" aria-pressed="false">Food</button>
       <button class="filters__btn" type="button" data-filter="clothing" aria-pressed="false">Clothing</button>
-      <button class="filters__btn" type="button" data-filter="health" aria-pressed="false">Health</button>
+      <button class="filters__btn" type="button" data-filter="health" aria-pressed="false">Medical</button>
       <button class="filters__btn" type="button" data-filter="companionship" aria-pressed="false">Companionship</button>
       <button class="filters__btn" type="button" data-filter="hygiene" aria-pressed="false">Project Clean</button>
       <button class="filters__btn" type="button" data-filter="team" aria-pressed="false">Our team</button>
@@ -66,6 +102,19 @@
     </div>
 
     <div class="gallery" id="gallery-grid">
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/founder-director.jpg" data-lightbox="gallery" data-caption="Our Founder and Programme Director at Kafanchan" data-cursor="View"><figure class="media"><img src="assets/images/medical/founder-director.jpg" alt="The Founder and Programme Director of Elastrong Cares Foundation in front of the Medical Outreach banner" loading="lazy"></figure><span class="gallery__overlay"><span>Our Founder and Programme Director at Kafanchan</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-05.jpg" data-lightbox="gallery" data-caption="Kafanchan medical outreach" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-05.jpg" alt="A large crowd of community members at the medical outreach" loading="lazy"></figure><span class="gallery__overlay"><span>Kafanchan medical outreach</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="video health" href="assets/videos/medical-testimonial.mp4" data-type="video" data-lightbox="gallery" data-caption="A beneficiary shares her story" data-cursor="Play"><figure class="media"><img src="assets/images/video/medical-testimonial.jpg" alt="A beneficiary shares her story (video)" loading="lazy"></figure><span class="gallery__badge"><svg class="icon"><use href="#i-play"/></svg>Video</span><span class="gallery__overlay"><span>A beneficiary shares her story</span><svg class="icon"><use href="#i-play"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-03.jpg" data-lightbox="gallery" data-caption="Free care for all" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-03.jpg" alt="A community member in front of the Medical Outreach banner" loading="lazy"></figure><span class="gallery__overlay"><span>Free care for all</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/volunteers-01.jpg" data-lightbox="gallery" data-caption="Medicines ready" data-cursor="View"><figure class="media"><img src="assets/images/medical/volunteers-01.jpg" alt="Medical volunteers preparing medication" loading="lazy"></figure><span class="gallery__overlay"><span>Medicines ready</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="hygiene" href="assets/images/hygiene/hygiene-02.jpg" data-lightbox="gallery" data-caption="Laundry day" data-cursor="View"><figure class="media"><img src="assets/images/hygiene/hygiene-02.jpg" alt="Care volunteers washing clothes for an elder" loading="lazy"></figure><span class="gallery__overlay"><span>Laundry day</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="video hygiene" href="assets/videos/care-washing.mp4" data-type="video" data-lightbox="gallery" data-caption="Washing clothes for our elders" data-cursor="Play"><figure class="media"><img src="assets/images/video/care-washing.jpg" alt="Washing clothes for our elders (video)" loading="lazy"></figure><span class="gallery__badge"><svg class="icon"><use href="#i-play"/></svg>Video</span><span class="gallery__overlay"><span>Washing clothes for our elders</span><svg class="icon"><use href="#i-play"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-01.jpg" data-lightbox="gallery" data-caption="The pharmacy table" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-01.jpg" alt="A table of free medication at the outreach" loading="lazy"></figure><span class="gallery__overlay"><span>The pharmacy table</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-07.jpg" data-lightbox="gallery" data-caption="Consultations in progress" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-07.jpg" alt="Patients being attended to by medical volunteers" loading="lazy"></figure><span class="gallery__overlay"><span>Consultations in progress</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="team" href="assets/images/team/medical-team.jpg" data-lightbox="gallery" data-caption="The medical outreach team" data-cursor="View"><figure class="media"><img src="assets/images/team/medical-team.jpg" alt="The Elastrong Cares team at the medical outreach" loading="lazy"></figure><span class="gallery__overlay"><span>The medical outreach team</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="video hygiene" href="assets/videos/care-cleaning.mp4" data-type="video" data-lightbox="gallery" data-caption="Cleaning an elder’s room" data-cursor="Play"><figure class="media"><img src="assets/images/video/care-cleaning.jpg" alt="Cleaning an elder’s room (video)" loading="lazy"></figure><span class="gallery__badge"><svg class="icon"><use href="#i-play"/></svg>Video</span><span class="gallery__overlay"><span>Cleaning an elder’s room</span><svg class="icon"><use href="#i-play"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-04.jpg" data-lightbox="gallery" data-caption="Waiting their turn" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-04.jpg" alt="Community members queueing at the medical outreach" loading="lazy"></figure><span class="gallery__overlay"><span>Waiting their turn</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
+      <a class="gallery__item" data-cat="health" href="assets/images/medical/medical-08.jpg" data-lightbox="gallery" data-caption="Everyone welcome" data-cursor="View"><figure class="media"><img src="assets/images/medical/medical-08.jpg" alt="Community members arriving at the medical outreach" loading="lazy"></figure><span class="gallery__overlay"><span>Everyone welcome</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
       <a class="gallery__item" data-cat="food" href="assets/images/food/giving-03.jpg" data-lightbox="gallery" data-caption="A food pack, handed over with care" data-cursor="View"><figure class="media"><img src="assets/images/food/giving-03.jpg" alt="A volunteer handing a food pack to an elderly woman" loading="lazy"></figure><span class="gallery__overlay"><span>A food pack, handed over with care</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
       <a class="gallery__item" data-cat="health" href="assets/images/health/health-01.jpg" data-lightbox="gallery" data-caption="Free medicines for every patient" data-cursor="View"><figure class="media"><img src="assets/images/health/health-01.jpg" alt="Volunteers dispensing medication at a free health outreach" loading="lazy"></figure><span class="gallery__overlay"><span>Free medicines for every patient</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
       <a class="gallery__item" data-cat="companionship" href="assets/images/companionship/companionship-07.jpg" data-lightbox="gallery" data-caption="A steady hand" data-cursor="View"><figure class="media"><img src="assets/images/companionship/companionship-07.jpg" alt="A volunteer helping an elderly woman walk" loading="lazy"></figure><span class="gallery__overlay"><span>A steady hand</span><svg class="icon"><use href="#i-plus"/></svg></span></a>
@@ -121,9 +170,9 @@
         <figure class="media"><img src="assets/images/video/our-story.jpg" alt="" loading="lazy"></figure>
         <span class="video-card__body"><span class="video-card__play"><svg class="icon"><use href="#i-play"/></svg></span><strong class="video-card__title">Gifts with a smile</strong></span>
       </button>
-      <button class="video-card" type="button" data-video="assets/videos/distribution-3.mp4" data-caption="Sitting with our elders" data-cursor="Play" data-reveal>
-        <figure class="media"><img src="assets/images/video/distribution-3.jpg" alt="" loading="lazy"></figure>
-        <span class="video-card__body"><span class="video-card__play"><svg class="icon"><use href="#i-play"/></svg></span><strong class="video-card__title">Sitting with our elders</strong></span>
+      <button class="video-card" type="button" data-video="assets/videos/medical-testimonial.mp4" data-caption="A beneficiary of the Kafanchan medical outreach" data-cursor="Play" data-reveal>
+        <figure class="media"><img src="assets/images/video/medical-testimonial.jpg" alt="" loading="lazy"></figure>
+        <span class="video-card__body"><span class="video-card__play"><svg class="icon"><use href="#i-play"/></svg></span><strong class="video-card__title">Voices from Kafanchan</strong></span>
       </button>
     </div>
   </div>

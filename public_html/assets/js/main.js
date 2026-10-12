@@ -676,11 +676,12 @@
     const impact = $('.impact-line p', w);
     const total = $$('[data-donate-total]', w);
     const impacts = [
-      [100000, 'Funds a full outreach day for an entire community of elders.'],
-      [50000, 'Provides food, medication and essentials for five elders.'],
-      [25000, 'Covers clothing, toiletries and bedding for an elder.'],
-      [10000, 'Pays for a health check-up and basic medication.'],
-      [5000, 'Puts a nourishing food pack in an elder’s hands.'],
+      [225000, 'Provides full care for three elders.'],
+      [150000, 'Provides full care for two elders.'],
+      [75000, 'Provides full care for an elder.'],
+      [45000, 'Covers clothing, toiletries and bedding for an elder.'],
+      [20000, 'Pays for a health check and medication.'],
+      [10000, 'Puts a food pack in an elder’s hands.'],
       [0, 'Every naira brings comfort to someone who has been forgotten.'],
     ];
     const update = () => {

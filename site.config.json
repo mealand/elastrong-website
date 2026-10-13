@@ -1,5 +1,5 @@
 {
-  "indexable": false,
+  "indexable": true,
   "name": "Elastrong Cares Foundation",
   "shortName": "Elastrong Cares",
   "domain": "https://elastrongcaresfoundation.org",
@@ -10,7 +10,7 @@
   "whatsapp": "2347035914772",
   "address": "Abuja, Federal Capital Territory, Nigeria",
   "officeHours": "Mon – Fri, 9am – 5pm",
-  "regNumber": "CAC/IT/NO 000000",
+  "regNumber": "RC - 183081",
   "founded": "2020",
   "mapEmbed": "https://www.google.com/maps?q=Abuja,+Nigeria&z=11&output=embed",
   "social": {

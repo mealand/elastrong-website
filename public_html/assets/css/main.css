@@ -480,6 +480,17 @@ a:hover .circle-arrow { transform: rotate(-45deg) scale(1.1); }
 .social-grid a .icon { position: absolute; left: 50%; top: 50%; width: 34px; height: 34px; color: var(--c-white); z-index: 2; transform: translate(-50%, -50%) scale(.4); opacity: 0; transition: transform .5s var(--ease-back), opacity .3s; }
 .social-grid a:hover::after { opacity: 1; }
 .social-grid a:hover .icon { transform: translate(-50%, -50%) scale(1); opacity: 1; }
+.social-feeds { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(1.2rem, 2.5vw, 2rem); }
+.social-feed { background: var(--c-white); border: 1px solid var(--c-line); border-radius: var(--radius); padding: clamp(1rem, 2vw, 1.4rem); }
+.social-feed__head { display: flex; align-items: center; gap: .9rem; margin-bottom: 1rem; }
+.social-feed__head > div { flex: 1; min-width: 0; }
+.social-feed__head strong { display: block; font-size: 1.05rem; }
+.social-feed__head small { display: block; color: var(--c-muted); font-size: .85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.social-feed__badge { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; color: var(--c-white); background: #1877f2; }
+.social-feed--instagram .social-feed__badge { background: linear-gradient(45deg, #f9a83a, #e1306c 50%, #833ab4); }
+.social-feed__badge .icon { width: 22px; height: 22px; }
+.social-feed .social-grid { grid-template-columns: repeat(3, 1fr); }
+.section-head__actions { display: flex; gap: .8rem; flex-wrap: wrap; }
 
 /* 12 Page hero ------------------------------------------------------------- */
 .page-hero { position: relative; min-height: 78vh; min-height: 78svh; display: flex; align-items: flex-end; padding: calc(var(--header-h) + 4rem) 0 clamp(3rem, 7vw, 6rem); color: var(--c-cream); overflow: hidden; isolation: isolate; background: var(--c-green-950); }
@@ -894,6 +905,9 @@ form.is-sent + .form-success, .form-success.is-shown { display: block; animation
   .social-grid { grid-template-columns: repeat(3, 1fr); }
 }
 @media (max-width: 900px) {
+  .social-feeds { grid-template-columns: 1fr; }
+}
+@media (max-width: 900px) {
   :root { --header-h: 72px; }
   .hero__inner, .intro__grid, .donate-band__grid, .split, .program-row, .alloc, .donate-layout, .slide { grid-template-columns: 1fr; }
   .hero { padding-bottom: 5rem; }
@@ -928,6 +942,8 @@ form.is-sent + .form-success, .form-success.is-shown { display: block; animation
 }
 @media (max-width: 640px) {
   .program-cards, .values, .team, .ways, .event-cards, .grid-2, .grid-3, .grid-4, .contact-cards, .form-grid, .amount-chips, .inkind { grid-template-columns: 1fr; }
+  .social-feed__head { flex-wrap: wrap; }
+  .social-feed__head .btn { width: 100%; justify-content: center; }
   .program-card { aspect-ratio: 4 / 4.4; }
   .program-card p { max-height: none; opacity: .85; }
   .stats { gap: .8rem; }
@@ -1060,6 +1076,10 @@ form.is-sent + .form-success, .form-success.is-shown { display: block; animation
 .bank-mini__note { margin-top: .4rem; font-size: .85rem; color: var(--c-muted); }
 .site-footer__credit { flex-basis: 100%; text-align: center; padding-top: 1rem; border-top: 1px solid var(--c-line-light); font-size: .8rem; letter-spacing: .06em; opacity: .85; }
 .site-footer__credit strong { color: var(--c-amber); font-weight: 700; }
+.site-footer__credit-link { display: inline-flex; align-items: center; gap: .45rem; vertical-align: middle; }
+.site-footer__credit-link img { width: 22px; height: 22px; transition: transform .4s var(--ease-back); }
+.site-footer__credit-link:hover img { transform: rotate(90deg); }
+.site-footer__credit-link:hover strong { text-decoration: underline; text-underline-offset: 3px; }
 
 @media (max-width: 900px) {
   .types { grid-template-columns: 1fr; }

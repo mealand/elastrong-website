@@ -34,8 +34,8 @@
 
   /* ---------- Media slots & placeholders ---------- */
   const PH = [
-    ['#1a6b4f', '#f4a83a'], ['#0f3d2e', '#e8643c'], ['#3fa37b', '#fde7c2'],
-    ['#e8643c', '#f4a83a'], ['#14513d', '#9fd3b8'], ['#0b2e23', '#f4a83a'],
+    ['#1a6b4f', '#4ea5e9'], ['#0f3d2e', '#1f5fae'], ['#3fa37b', '#fde7c2'],
+    ['#1f5fae', '#4ea5e9'], ['#14513d', '#9fd3b8'], ['#0b2e23', '#4ea5e9'],
   ];
   function initMedia() {
     $$('.media').forEach((m, i) => {
@@ -605,7 +605,7 @@
       h.style.setProperty('--x1', `${x + Math.cos(ang) * dist}px`);
       h.style.setProperty('--y1', `${y + Math.sin(ang) * dist - 80}px`);
       h.style.setProperty('--r', `${(Math.random() - .5) * 720}deg`);
-      h.style.color = ['#e8643c', '#f4a83a', '#3fa37b'][i % 3];
+      h.style.color = ['#1f5fae', '#4ea5e9', '#3fa37b'][i % 3];
       document.body.appendChild(h);
       setTimeout(() => h.remove(), 1700);
     }
